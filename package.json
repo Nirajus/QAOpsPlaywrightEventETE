@@ -1,0 +1,27 @@
+{
+  "name": "playwrightshoppingete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "Webtests": "npx playwright test tests/ClientApp.spec.js",
+    "APItests": "npx playwright test tests/WebAPIPart1.spec.js",
+    "APItests2": "npx playwright test tests/WebAPIPart2.spec.js",
+    "CucumberRegression": "npx cucumber-js --tags '@Regression' --retry 1 --exit --format html:cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@azure/identity": "^4.13.1",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.0.0",
+    "exceljs": "^4.4.0"
+  }
+}
